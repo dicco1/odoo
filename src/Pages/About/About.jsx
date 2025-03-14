@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 
 export default function AboutUs() {
   const team = [
-    { name: "Ali Valiyev", role: "CEO", img: "/public/elon.png" },
-    { name: "Ahmad Ergashev", role: "Marketing", img: "/public/IMG_2356_3_1.png" },
-    { name: "Bekzod Rustamov", role: "Developer", img: "/public/murod.jpeg" },
-    { name: "Ali Valiyev", role: "CEO", img: "/public/elon.png" },
-    { name: "Ahmad Ergashev", role: "Marketing", img: "/public/IMG_2356_3_1.png" },
-    { name: "Bekzod Rustamov", role: "Developer", img: "/public/murod.jpeg" },
+    { name: "Ali Valiyev", role: "CEO", img: "/elon.png" },
+    { name: "Ahmad Ergashev", role: "Marketing", img: "/IMG_2356_3_1.png" },
+    { name: "Bekzod Rustamov", role: "Developer", img: "/murod.jpeg" },
+    { name: "Ali Valiyev", role: "CEO", img: "/elon.png" },
+    { name: "Ahmad Ergashev", role: "Marketing", img: "/IMG_2356_3_1.png" },
+    { name: "Bekzod Rustamov", role: "Developer", img: "/murod.jpeg" },
   ];
 
   const testimonials = [
