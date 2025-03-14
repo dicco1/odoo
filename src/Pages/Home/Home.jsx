@@ -241,7 +241,7 @@ maqsadlarimizga erishgan bo'lamiz.
               <p className="text-xl">Jemurat Mambetkarimov</p>
             </div>
               <div data-aos="fade-up" className="flex items-center  justify-center gap-24 mt-24">
-                <button className="hover:bg-transparent border transition-all duration-300 px-6 py-3 text-lg font-semibold text-blue-600 bg-white rounded-lg hover:bg-gray-200"><Link to={"/rector"}>Ko'proq Bilish</Link></button>
+                <button className="hover:bg-transparent border transition-all duration-300 px-6 py-3 text-lg font-semibold text-blue-600 bg-white rounded-lg hover:bg-gray-200"><Link to={"/about"}>Ko'proq Bilish</Link></button>
                 <button className="hover:bg-transparent border transition-all duration-300 px-6 py-3 text-lg font-semibold text-blue-600 bg-white rounded-lg hover:bg-gray-200"><Link to={"/register"}>Kursga Yozilish</Link></button>
               </div>
           </div>
