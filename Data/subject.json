@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "name": "Matematika",
+      "shortDesc": "Hisoblash va mantiq asoslari.",
+      "fullDesc": "Matematika - eng qadimiy va eng muhim fanlardan biri. U hisoblash, algebra, geometriya va mantiq asoslarini o‘z ichiga oladi. Matematik bilimlar muhandislik, fizika, iqtisod va boshqa ko‘plab sohalarda keng qo‘llaniladi.",
+      "img": "/math.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Fizika",
+      "shortDesc": "Tabiat qonuniyatlarini o‘rganing.",
+      "fullDesc": "Fizika – tabiatdagi hodisalarni tushuntiruvchi asosiy fanlardan biridir. Unda mexanika, optika, elektr va magnitizm, kvant fizikasi kabi bo‘limlar mavjud. Fizika hayotimizdagi ko‘plab texnologik yutuqlarning asosi hisoblanadi.",
+      "img": "/physics.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Dasturlash",
+      "shortDesc": "Python, JavaScript va boshqa texnologiyalar.",
+      "fullDesc": "Dasturlash - zamonaviy dunyoning yuragi. U turli dasturlash tillari orqali kompyuter va mobil ilovalar yaratishga yordam beradi. Bugungi kunda Python, JavaScript, C++, Java kabi tillar eng mashhurlari hisoblanadi.",
+      "img": "/programming.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Adabiyot",
+      "shortDesc": "She’riyat va nasr olami.",
+      "fullDesc": "Adabiyot – insoniyat madaniyatining muhim qismi bo‘lib, u she’riyat, nasr va dramaturgiyani o‘z ichiga oladi. Adabiyot inson tafakkurini boyitib, ma’naviy o‘sishga yordam beradi.",
+      "img": "/literature.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Ingliz tili",
+      "shortDesc": "Grammatika va so‘z boyligini oshirish.",
+      "fullDesc": "Ingliz tili - dunyodagi eng keng tarqalgan tillardan biri. U xalqaro aloqalar, biznes, texnologiya va ilm-fan sohalarida asosiy til hisoblanadi. Ingliz tilini bilish sizga dunyo bilan bog‘lanish imkonini beradi.",
+      "img": "/english.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Rus tili",
+      "shortDesc": "Rus tilida erkin muloqot qilish.",
+      "fullDesc": "Rus tili - dunyodagi eng ko‘p so‘zlashiladigan tillardan biri. U Rossiya va MDH davlatlarida asosiy aloqa vositasi bo‘lib xizmat qiladi. Rus tilini o‘rganish biznes, sayohat va ilm-fan uchun foydali bo‘lishi mumkin.",
+      "img": "/russian.jpg"
+    }
+  ]
+  
