@@ -9,7 +9,7 @@ import { Autoplay, FreeMode, Grid } from "swiper/modules";
 import Dars from "/darslar.jpg";
 import Tex from "/texnalog.jpg";
 import Komanda from "/komanda.jpg";
-import BGG from "/back.jpg"
+import Bgg from "/back.jpg"
 import Chat from "/Chat button.avif"
 
 
@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <div className="text-center container mx-auto">
       {/* Bosh qism (Hero Section) */}
-      <section className="px-44 py-20 m-0 text-blue-900 h-[100vh] bg-cover bg-center bg-[url({BGG})]">
+      <section className="px-44 py-20 m-0 text-blue-900 h-[100vh] bg-cover bg-center bg-[url({Bgg})]">
         <div  className="relative  border-2 border-transparent mt-16 p-6 bg-white/30 rounded-lg h-[400px] shadow-lg backdrop-blur-md flex flex-col items-center py-32">
           <h2 className="text-5xl font-bold">
             Protech – Kelajak ilmini o‘rganing!
