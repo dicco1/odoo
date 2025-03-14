@@ -9,7 +9,7 @@ const subjects = [
     { id: 1, name: "Matematika", desc: "Hisoblash va mantiq asoslari.", img: "/math.jpg" },
     { id: 2, name: "Fizika", desc: "Tabiat qonuniyatlarini o‘rganing.", img: "/physics.jpg" },
     { id: 3, name: "Dasturlash", desc: "Python, JavaScript va boshqa texnologiyalar.", img: "/programming.jpg" },
-    { id: 4, name: "Adabiyot", desc: "She’riyat va nasr olami.", img: "/public/literature.jpg" },
+    { id: 4, name: "Adabiyot", desc: "She’riyat va nasr olami.", img: "/literature.jpg" },
     { id: 5, name: "Ingliz tili", desc: "Grammatika va so‘z boyligini oshirish.", img: "/english.jpg" },
     { id: 6, name: "Rus tili", desc: "Rus tilida erkin muloqot qilish.", img: "/russian.jpg" },
   ];
