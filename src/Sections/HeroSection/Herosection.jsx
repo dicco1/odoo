@@ -9,7 +9,7 @@ function Herosection() {
           {/* Image Section */}
           <div className="md:w-1/2">
             <img
-              src="../../../public/FounderOfPdp-Img.693bb10fd8b0dda2661c.jpg"
+              src="/public/FounderOfPdp-Img.693bb10fd8b0dda2661c.jpg"
               alt="Professional in business attire"
               className="w-full h-full object-cover"
             />
