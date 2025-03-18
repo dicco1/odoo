@@ -14,7 +14,7 @@ function Home() {
   return (
     <div>
       {/* Bosh qism (Hero Section) */}
-      <section className="px-44 py-20 m-0 text-blue-900 h-[100vh] bg-cover bg-center bg-[url('../../../public/back.jpg')]">
+      <section className="px-44 py-20 m-0 text-blue-900 h-[100vh] bg-cover bg-center bg-[url('/back.jpg')]">
         <div  className="relative  border-2 border-transparent mt-16 p-6 bg-white/30 rounded-lg h-[400px] shadow-lg backdrop-blur-md flex flex-col items-center py-32">
           <h2 className="text-5xl font-bold">
             Protech – Kelajak ilmini o‘rganing!
@@ -119,7 +119,7 @@ function Home() {
               {/* Image Section */}
               <div className="md:w-2/5 h-[489px] relative">
                 <img
-                  src="../../../public/FounderOfPdp-Img.693bb10fd8b0dda2661c.jpg"
+                  src="/FounderOfPdp-Img.693bb10fd8b0dda2661c.jpg"
                   alt="Professional in business attire"
                   className="w-full h-full object-cover"
                 />
@@ -184,7 +184,7 @@ function Home() {
           <div data-aos="fade-up" className="relative">
             <div className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden border-8 border-teal-400">
               <img 
-                src="../../../public/rektor.0df6bf96ed6aa0ab7c1c.jpg" 
+                src="/rektor.0df6bf96ed6aa0ab7c1c.jpg" 
                 alt="Jemurat Mambetkarimov"
                 className="w-full h-full object-cover"
               />
@@ -254,7 +254,7 @@ function Home() {
         <div className="flex justify-center mb-6">
           <div className=" w-24 h-24 bg-gradient-to-br from-blue-400 to-purple-700 rounded-full flex items-center justify-center shadow-lg transform hover:scale-105 transition">
             <img
-              src="../../../public/Chat button.avif"
+              src="/Chat button.avif"
               alt="Online Support"
               className="w-20 h-20 object-cover opacity-80"
             />
