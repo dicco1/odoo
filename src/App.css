@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
 .mySwiper{
     display: flex !important;
     align-items: center !important;
@@ -52,3 +59,201 @@
       border-color: rgb(255, 0, 0); 
     }
   }
+
+  
+  /* 73489 */
+
+
+/* Fanlar Swiper */
+.swiper-slide {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.swiper-slide:hover {
+  background: #e2e8f0;
+  transform: scale(1.05);
+}
+
+/* Afzalliklar bo‘limi */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.feature-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Ro‘yxatdan o‘tish bo‘limi */
+.register-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.register-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.register-button:hover {
+  background: #1e40af;
+}
+
+/* ProTech School bo‘limi */
+.protech-school {
+  background: #0f172a;
+  color: white;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.protech-text {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Rektor bo‘limi */
+.rector-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.rector-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ffffff;
+}
+
+.rector-text {
+  max-width: 500px;
+}
+
+/* 24/7 Online Support */
+.online-support {
+  background: linear-gradient(to right, #16a34a, #000);
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.online-support img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.online-support button {
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  background: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.online-support button:hover {
+  background: white;
+  color: black;
+}
+
+/* Mobil moslashuv */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .swiper-slide {
+    height: 120px;
+  }
+
+  .feature-card img {
+    width: 90%;
+  }
+
+  .rector-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .swiper-slide {
+    height: 100px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .rector-img {
+    width: 200px;
+    height: 200px;
+  }
+}
