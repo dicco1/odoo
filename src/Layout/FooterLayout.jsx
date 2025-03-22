@@ -13,7 +13,7 @@ function FooterLayout() {
             <p className="mt-2 text-gray-300">Kelajak ilmini o‘rganing!</p>
           </div>
 
-          {/* Foydali havolalar */}
+      
           <div>
             <h3 className="text-lg font-semibold">Foydali havolalar</h3>
             <ul className="mt-2 space-y-2">
@@ -24,7 +24,6 @@ function FooterLayout() {
             </ul>
           </div>
 
-          {/* Ijtimoiy tarmoqlar */}
           <div>
             <h3 className="text-lg font-semibold">Bizni kuzatib boring</h3>
             <div className="flex space-x-4 mt-2">
