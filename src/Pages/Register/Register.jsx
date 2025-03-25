@@ -137,6 +137,22 @@ function Register()  {
             {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
           </div>
 
+
+          <div>
+            <label className="flex items-center">
+              <input
+                type="checkbox"
+                name="termsAccepted"
+                checked={formData.termsAccepted}
+                onChange={handleChange}
+                className="mr-2"
+              />
+              <span className="text-gray-700">Men shartlarga roziman</span>
+            </label>
+            {errors.termsAccepted && <p className="text-red-500 text-sm">{errors.termsAccepted}</p>}
+          </div>
+
+
           {/** Submit tugma */}
           <button
             type="submit"
