@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FiPhone, FiMail, FiMapPin } from "react-icons/fi"; // React Icons import
+import { FiPhone, FiMail, FiMapPin } from "react-icons/fi"; 
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -31,7 +31,7 @@ const Contact = () => {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-        {/* Aloqa Formasi */}
+ 
         <div className="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-right">
           <h3 className="text-2xl font-semibold mb-4">Bizga Xabar Yuboring</h3>
           {success && <p className="text-green-500">{success}</p>}
@@ -87,7 +87,7 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* Aloqa Ma'lumotlari */}
+      
         <div className="bg-gray-100 p-6 rounded-lg shadow-lg" data-aos="fade-left">
           <h3 className="text-2xl font-semibold mb-4">Bizning Ma'lumotlar</h3>
 
@@ -106,7 +106,7 @@ const Contact = () => {
             <p><strong>Email:</strong> diyorbekpardayev2184@gmail.com</p>
           </div>
 
-          {/* Xarita */}
+       
           <div className="mt-4">
             <iframe
               className="w-full h-48 rounded-lg"
