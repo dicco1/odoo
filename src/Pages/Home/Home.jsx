@@ -6,7 +6,7 @@ import "./../../App.css";
 
 import Dars from "/darslar.jpg";
 import Tex from "/texnalog.jpg";
-import Komanda from "/komanda.jpg";
+
 import Bgg from "/back.jpg"
 import Chat from "/Chat button.avif"
 
@@ -87,7 +87,7 @@ function Home() {
     <div data-aos="fade-up" className="p-6">
       <h4 className="text-lg md:text-xl font-bold">Kuchli jamoa</h4>
       <p className="text-sm md:text-base">O‘z sohasida tajribali mutaxassislar.</p>
-      <img className="mt-6 md:mt-12 rounded-lg w-full lg:w-[350px]" src={Komanda} alt="jamoa" />
+      <img className="mt-6 md:mt-12 rounded-lg w-full lg:w-[350px]" src={Dars} alt="jamoa" />
     </div>
   </div>
 </section>
