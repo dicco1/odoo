@@ -13,7 +13,7 @@ import Chat from "/Chat button.avif"
 function Home() {
   return (
     <div>
-      {/* Bosh qism (Hero Section) */}
+   
       <section className="px-44 py-20 m-0 text-blue-900 h-[100vh] bg-cover bg-center bg-[url('/back.jpg')]">
         <div  className="relative  border-2 border-transparent mt-16 p-6 bg-white/30 rounded-lg h-[400px] shadow-lg backdrop-blur-md flex flex-col items-center py-32">
           <h2 className="text-5xl font-bold">
@@ -35,7 +35,6 @@ function Home() {
       </section>
 
 <div className="text-center container mx-auto">
-  {/* Fanlar bo‘limi */}
   <section className="mt-16">
     <h3 className="text-2xl md:text-3xl font-semibold text-blue-700 mb-6 md:mb-10">
       Asosiy Fanlar
@@ -70,7 +69,6 @@ function Home() {
 
 
 
-        {/* Afzalliklar bo‘limi */}
         <section className="py-12 mt-16 bg-gray-200 rounded-md h-auto">
   <h3 className="text-2xl md:text-3xl font-semibold text-blue-700 text-center">
     Nega bizni tanlash kerak?
@@ -94,7 +92,6 @@ function Home() {
   </div>
 </section>
 
-        {/* Ro‘yxatdan o‘tish bo‘limi */}
         <section className="mt-16">
           <h3 className="text-3xl font-semibold text-blue-700">
             Biz bilan o‘qing!
@@ -116,19 +113,16 @@ function Home() {
         <div className="min-h-screen bg-gradient-to-br from-teal-50 to-white flex items-center justify-center p-4 ">
           <div className="max-w-4xl bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="flex flex-col md:flex-row">
-              {/* Image Section */}
               <div className="md:w-2/5 h-[489px] relative">
                 <img
-                  src="/FounderOfPdp-Img.693bb10fd8b0dda2661c.jpg"
+                  src="FounderOfPdp-Img.693bb10fd8b0dda2661c.jpg"
                   alt="Professional in business attire"
                   className="w-full h-full object-cover"
                 />
               </div>
 
-                {/* Content Section */}
                 <div className="md:w-1/2 p-8 flex flex-col justify-between">
                   <div>
-                    {/* Logo and Brand */}
                     <div
                       data-aos="fade-left"
                       className="flex items-center gap-2 mb-6"
@@ -141,7 +135,7 @@ function Home() {
                       </span>
                     </div>
 
-                    {/* Testimonial Text */}
+                  
                     <div data-aos="fade-left" className="relative">
                       <h1 className="text-teal-100 w-12 h-12 absolute -top-4 -left-2" />
                       <p className="text-gray-600 relative z-10 leading-relaxed text-left mb-6">
@@ -158,7 +152,6 @@ function Home() {
                     </div>
                   </div>
 
-                {/* Author Info */}
                 <div  data-aos="fade-left">
                   <h3 className="text-teal-500 font-semibold text-lg">
                     School Director
@@ -173,14 +166,13 @@ function Home() {
       {/* ----------------------- */}
       <div className="min-h-screen rounded-xl bg-blue-800 text-white mt-20">
       <section className="container mx-auto px-4 py-16 relative">
-        {/* Background Text */}
+       
         <div data-aos="fade-up" className="absolute right-0  mt-0 top-0 text-[200px] border-t-black  font-bold text-black  opacity-[0.2]   select-none">
           Rektor
         </div>
-        
-        {/* Main Content */}
+     
         <div className="flex flex-col mt-[80px] lg:flex-row items-center gap-12">
-          {/* Image Container */}
+ 
           <div data-aos="fade-up" className="relative">
             <div className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden border-8 border-teal-400">
               <img 
@@ -191,9 +183,9 @@ function Home() {
             </div>
           </div>
 
-              {/* Content */}
+         
               <div className="flex-1 max-w-2xl">
-                {/* Logo */}
+             
                 <div
                   data-aos="fade-up"
                   className="flex items-center gap-3 mb-8"
@@ -206,7 +198,6 @@ function Home() {
                   </div>
                 </div>
 
-                {/* Text Content */}
                 <p
                   data-aos="fade-up"
                   className="text-lg mb-8 leading-relaxed z-50 relative"
@@ -219,7 +210,7 @@ function Home() {
                   shakllantirish.
                 </p>
 
-            {/* Signature */}
+     
             <div data-aos="fade-up">
               <h3 className="text-teal-400 text-2xl font-bold mb-2">
                 ProTech School rektori
@@ -241,16 +232,16 @@ function Home() {
 
       </div>
       <div data-aos="fade-up" className=" katta relative bg-gradient-to-r h-[380px] from-green-600 to-black p-6 rounded-2xl shadow-xl w-80 text-center border border-gray-700">
-        {/* Title */}
+  
         <h2 className="text-white text-2xl font-bold mb-2 tracking-widest">24/7 ONLINE</h2>
 
-                {/* Description */}
+              
                 <p className="text-gray-300 text-sm mb-6">
                   O'qish davomida qiynalmashingiz uchun biz sizga 24/7 online
                   ko'mak beramiz.
                 </p>
 
-        {/* 3D Style Image */}
+       
         <div className="flex justify-center mb-6">
           <div className=" w-24 h-24 bg-gradient-to-br from-blue-400 to-purple-700 rounded-full flex items-center justify-center shadow-lg transform hover:scale-105 transition">
             <img
@@ -261,7 +252,7 @@ function Home() {
           </div>
         </div>
 
-                {/* Glassmorphism Button */}
+            
                 <button className="bg-black text-white py-2 px-6 mt-9 rounded-lg border border-gray-500 hover:bg-gray-900 transition duration-300 shadow-md hover:shadow-xl">
                   <Link to={"/contact"}>Aloqa</Link>
                 </button>
