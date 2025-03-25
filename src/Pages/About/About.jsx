@@ -22,7 +22,7 @@ export default function AboutUs() {
 
   return (
     <div className="bg-black text-gray-900">
-      {/* Hero Section */}
+ 
       <section className="relative h-screen flex items-center justify-center text-center bg-cover bg-center bg-black bg-opacity-50" style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10">
@@ -35,7 +35,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Bizning Maqsadimiz */}
+   
       <section className="py-20 text-center bg-white">
         <h2 className="text-4xl font-bold text-gray-800">Bizning Maqsadimiz</h2>
         <p className="mt-4 max-w-3xl mx-auto text-gray-700">IT sohasi va innovatsiyalar orqali yoshlarni rivojlantirishga yordam berish.</p>
@@ -59,7 +59,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Talabalarimiz Fikri */}
+
       <section className="py-20 text-center bg-gray-800">
         <h2 className="text-4xl font-bold text-white">Talabalarimiz Fikri</h2>
         <div className="mt-8 max-w-3xl mx-auto text-white">
@@ -80,22 +80,24 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Bizning Jamoa */}
       <section className="py-16 px-4 bg-white">
-        <h2 className="text-3xl font-bold text-center text-gray-800">Bizning Jamoa</h2>
-        <div className="container mx-auto flex justify-center">
-          <div className="  gap-8 mt-8 grid grid-cols-3 w-1/2  ">
-          {team.map((member, index) => (
-            <div key={index} className="text-center">
-              <img src={member.img} alt={member.name} className="w-32 h-32 rounded-full object-cover mx-auto" />
-              <h3 className="mt-2 font-bold text-gray-800">{member.name}</h3>
-              <p className="text-sm text-gray-600">{member.role}</p>
-            </div>
-          ))}
+  <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800">Bizning Jamoa</h2>
+  <div className="container mx-auto flex justify-center">
+    <div className="gap-8 mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full md:w-3/4 lg:w-1/2">
+      {team.map((member, index) => (
+        <div key={index} className="text-center">
+          <img
+            src={member.img}
+            alt={member.name}
+            className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mx-auto"
+          />
+          <h3 className="mt-2 text-lg md:text-xl font-bold text-gray-800">{member.name}</h3>
+          <p className="text-sm md:text-base text-gray-600">{member.role}</p>
         </div>
-        </div>
-        
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Afzalliklarimiz */}
       <section className="py-16 px-4 text-center bg-gray-100">
