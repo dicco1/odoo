@@ -1,78 +1,78 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+
+const translations = {
+  en: {
+    home: "Home",
+    courses: "Courses",
+    about: "About Us",
+    pricing: "Pricing",
+    register: "Register",
+  },
+  uz: {
+    home: "Bosh sahifa",
+    courses: "Kurslar",
+    about: "Biz haqimizda",
+    pricing: "Narxlar",
+    register: "Kursga yozilish",
+  },
+};
 
 function NavbarLayout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [language, setLanguage] = useState(localStorage.getItem("lang") || "en");
+
+  useEffect(() => {
+    localStorage.setItem("lang", language);
+  }, [language]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const toggleLanguage = () => {
+    setLanguage((prevLanguage) => (prevLanguage === "en" ? "uz" : "en"));
+  };
+
   return (
     <nav className="top-0 left-0 z-10 flex items-center justify-between w-full py-5 px-4 bg-blue-600 shadow-md m-0 mx-auto">
-      {/* Logo */}
       <h1 className="text-2xl md:text-4xl font-bold text-white">Protech</h1>
 
-      {/* Navigation Links for Larger Screens */}
-      <div className="hidden md:flex space-x-6">
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive
-              ? "text-yellow-300"
-              : "text-white hover:text-yellow-300 transition-all duration-300"
-          }
+      <div className="flex space-x-4">
+        <button
+          onClick={toggleLanguage}
+          className="text-white border px-2 rounded-md transition-all duration-300 hover:bg-white hover:text-blue-800"
         >
-          Home
+          {language === "en" ? "UZ" : "EN"}
+        </button>
+      </div>
+
+      <div className="hidden md:flex space-x-6 w-[400px]">
+        <NavLink to="/" className="text-white">
+          {translations[language].home}
         </NavLink>
-        <NavLink
-          to="/fanlar"
-          className={({ isActive }) =>
-            isActive
-              ? "text-yellow-300"
-              : "text-white hover:text-yellow-300 transition-all duration-300"
-          }
-        >
-          Kurslar
+        <NavLink to="/fanlar" className="text-white">
+          {translations[language].courses}
         </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            isActive
-              ? "text-yellow-300"
-              : "text-white hover:text-yellow-300 transition-all duration-300"
-          }
-        >
-          About Us
+        <NavLink to="/about" className="text-white">
+          {translations[language].about}
         </NavLink>
-        <NavLink
-          to="/narxlar"
-          className={({ isActive }) =>
-            isActive
-              ? "text-yellow-300"
-              : "text-white hover:text-yellow-300 transition-all duration-300"
-          }
-        >
-          Narxlar
+        <NavLink to="/narxlar" className="text-white">
+          {translations[language].pricing}
         </NavLink>
       </div>
 
-      {/* Register Button for Larger Screens */}
-      <div className="hidden md:block space-x-4">
+      <div className="hidden md:block">
         <NavLink
           to="/register"
-          className="px-3 py-1 text-white bg-transparent rounded border border-white hover:border-black transition-all duration-300"
+          className="px-3 py-1 text-white border border-white rounded"
         >
-          Kursga Yozilish
+          {translations[language].register}
         </NavLink>
       </div>
 
-      {/* Hamburger Menu for Small Screens */}
-      <div className="md:hidden">
-        <button
-          className="text-white focus:outline-none"
-          onClick={toggleMenu}
-        >
+      <div className="md:hidden z-50">
+        <button className="text-white" onClick={toggleMenu}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -90,60 +90,43 @@ function NavbarLayout() {
         </button>
       </div>
 
-      {/* Dropdown Menu for Small Screens */}
       {isMenuOpen && (
-        <div className="absolute top-16 z-50 left-0 w-full bg-blue-600 shadow-md md:hidden">
+        <div className="absolute top-16 left-0 w-full bg-blue-600 shadow-md md:hidden z-50">
           <div className="flex flex-col items-center space-y-4 py-4">
             <NavLink
               to="/"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-yellow-300"
-                  : "text-white hover:text-yellow-300 transition-all duration-300"
-              }
+              className="text-white"
               onClick={toggleMenu}
             >
-              Home
+              {translations[language].home}
             </NavLink>
             <NavLink
               to="/fanlar"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-yellow-300"
-                  : "text-white hover:text-yellow-300 transition-all duration-300"
-              }
+              className="text-white"
               onClick={toggleMenu}
             >
-              Kurslar
+              {translations[language].courses}
             </NavLink>
             <NavLink
               to="/about"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-yellow-300"
-                  : "text-white hover:text-yellow-300 transition-all duration-300"
-              }
+              className="text-white"
               onClick={toggleMenu}
             >
-              About Us
+              {translations[language].about}
             </NavLink>
             <NavLink
               to="/narxlar"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-yellow-300"
-                  : "text-white hover:text-yellow-300 transition-all duration-300"
-              }
+              className="text-white"
               onClick={toggleMenu}
             >
-              Narxlar
+              {translations[language].pricing}
             </NavLink>
             <NavLink
               to="/register"
-              className="px-3 py-1 text-white bg-transparent rounded border border-white hover:border-black transition-all duration-300"
+              className="text-white border border-white px-3 py-1 rounded"
               onClick={toggleMenu}
             >
-              Kursga Yozilish
+              {translations[language].register}
             </NavLink>
           </div>
         </div>
