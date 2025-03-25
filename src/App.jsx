@@ -11,7 +11,7 @@ import Contact from "./Pages/Contact/Contact";
 import AboutUs from "./Pages/About/About";
 import Narxlar from "./Pages/Narxlar/Narxlar";
 
-// ScrollToTop komponenti
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
