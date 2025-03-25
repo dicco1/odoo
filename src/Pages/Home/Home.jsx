@@ -112,7 +112,7 @@ function Home() {
 
       <section className="mt-16 ">
         <div className="min-h-screen bg-gradient-to-br from-teal-50 to-white flex items-center justify-center p-4 ">
-          <div className="max-w-4xl bg-white rounded-2xl shadow-xl overflow-hidden">
+          <div className="max-w-4xl bg-white rounded-2xl shadow-xl h-[489px]   overflow-hidden">
             <div className="flex flex-col md:flex-row">
               <div className="md:w-2/5 h-[489px] relative">
                 <img
